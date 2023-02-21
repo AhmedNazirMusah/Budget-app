@@ -1,0 +1,15 @@
+<%= form_with model: @new_transaction do |f| %>
+    <div>
+      <%= f.text_field :name, placeholder: "Name" %>
+    </div>
+    <div>
+      <%= f.number_field :amount, placeholder: "Amount" %>
+    </div>
+    <div >
+      <%= f.collection_select :group_id, @user_groups, :id, :name %>
+    </div>
+    <%= f.hidden_field :author_id, value: current_user.id %>
+    <div>
+      <%= f.submit "ADD" %>
+    </div>
+  <% end %>

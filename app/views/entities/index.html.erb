@@ -1,1 +1,22 @@
-<h2>Transactions index page </h2>
+<section>
+  <div>
+    <span>Total amount</span> 
+    <span><%= @group.total_accumulated_amount %></span>
+  </div>
+
+  <div>
+    <% @group_transactions.each do |t| %>
+      <div>
+        <div >
+          <span class="primary-text"><%= t.name %></span>
+          <span class="date-stamp"><%= t.updated_at %></span>
+        </div>
+        <div>
+          <span ><%= t.amount %></span>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <%= button_to "ADD TRANSACTION", new_entity_path, method: "get" %>
+</section>

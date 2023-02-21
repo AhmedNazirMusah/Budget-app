@@ -1,1 +1,15 @@
-<h1>groups new page </h1>
+<%= form_with model: @new_group do |f| %>
+    <div >
+      <%= f.text_field :name, placeholder: "Name" %>
+    </div>
+  
+    <div >
+      <%= f.text_field :icon, placeholder: "URL for icon" %>
+    </div>
+    
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    
+    <div >
+      <%= f.submit "CREATE" %>
+    </div>
+  <% end %>

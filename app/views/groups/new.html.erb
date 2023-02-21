@@ -1,15 +1,21 @@
+<header id="header-main">
+  <nav><a href="<%= groups_path %>"><%= image_tag("house-fill.svg") %></a></nav>
+  <h1>New Category</h1>
+  <%= button_to image_tag("box-arrow-left.svg"), destroy_user_session_path, method: :delete, class: "log-out" %>
+</header>
+
 <%= form_with model: @new_group do |f| %>
-    <div >
+    <div class="field">
       <%= f.text_field :name, placeholder: "Name" %>
     </div>
   
-    <div >
+    <div class="field">
       <%= f.text_field :icon, placeholder: "URL for icon" %>
     </div>
     
     <%= f.hidden_field :user_id, value: current_user.id %>
     
-    <div >
-      <%= f.submit "CREATE" %>
+    <div class="field">
+      <%= f.submit "CREATE", class: "btn"%>
     </div>
   <% end %>

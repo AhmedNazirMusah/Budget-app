@@ -1,3 +1,9 @@
+<header id="header-main">
+  <nav><a href="<%= groups_path %>"><%= image_tag("house-fill.svg") %></a></nav>
+  <h1>Transactions</h1>
+  <%= button_to image_tag("box-arrow-left.svg"), destroy_user_session_path, method: :delete, class: "log-out" %>
+</header>
+
 <section>
   <div>
     <span>Total amount</span> 

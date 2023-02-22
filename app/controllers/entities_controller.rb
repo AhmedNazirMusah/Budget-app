@@ -1,5 +1,5 @@
 class EntitiesController < ApplicationController
-    before_action :require_login
+  before_action :require_login
   def index
     @group = Group.find(params[:group_id])
     @group_transactions = Entity.where(group: @group).order(created_at: :desc)

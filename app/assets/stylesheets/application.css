@@ -16,194 +16,193 @@
 
 /* stylelint-disable no-descending-specificity */
 :root {
-    --main-color: #3778c2;
-    --sec-color: #5fb523;
-    --text-color: #434b54;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    min-height: 100vh;
-    padding-bottom: 70px;
-    position: relative;
-    background-color: #eaeaea;
-    font-family: proxima-nova, sans-serif;
-    color: var(--text-color);
-  }
-  
-  .primary-text {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-  
-  .sec-text {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-  
-  .btn {
-    width: 100%;
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
-    display: block;
-    text-align: center;
-    font-family: proxima-nova, sans-serif;
-    background-color: var(--sec-color);
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  section#home-page header {
-    padding-top: 25vh;
-  }
-  
-  section#home-page h1 {
-    text-align: center;
-  }
-  
-  section#home-page nav {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-  }
-  
-  .h-btn {
-    background-color: cornflowerblue;
-    padding: 11px;
-    width: 50%;
-    color: white;
-    font-weight: bolder;
-    
-  }
+  --main-color: #3778c2;
+  --sec-color: #5fb523;
+  --text-color: #434b54;
+}
 
-  section#home-page nav .bttn {
-    position: initial;
-  }
-  
-  .blue-bttn {
-    background-color: var(--main-color) !important;
-  }
-  
-  .grey-bttn {
-    background-color: inherit !important;
-    color: var(--text-color);
-  }
-  
-  .grey-bttn a {
-    color: var(--text-color) !important;
-  }
-  
-  header#header-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--main-color);
-  }
-  
-  header#header-main img {
-    width: 35px;
-  }
-  
-  header#header-main h1 {
-    padding: 10px 0;
-    font-size: 1.5rem;
-    white-space: nowrap;
-    color: #ffe;
-  }
-  
-  header.title h1 {
-    margin: 0 auto !important;
-    transform: none !important;
-  }
-  
-  .log-out {
-    background: none;
-    border: none;
-  }
-  
-  .log-out img {
-    width: 25px !important;
-  }
-  
-  a.card-link-wrapper {
-    text-decoration: none;
-    color: var(--text-color);
-  }
-  
-  div.category {
-    margin: 11px;
-    padding: 11px;
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    background-color: #fff;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  div.category:hover {
-    background-color: antiquewhite;
-  }
-  
-  div.category .details {
-    width: 50%;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
-  }
-  
-  div.category .img-holder {
-    width: 25%;
-    margin-top: 0;
-  }
-  
-  div.category .amount-col {
-    width: 25%;
-    text-align: end;
-  }
-  
-  div.category .date {
-    font-size: 0.8rem;
-  }
-  
-  div.amount-card {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 0 5px #a0a0a0;
-    background-color: #fff;
-  }
-  
-  form {
-    margin: 10px 0;
-    text-align: center;
-  }
-  
-  form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #a0a0a0;
-    border-bottom: none;
-  }
-  
-  form input[type="checkbox"] {
-    margin: 20px 0;
-    width: auto;
-  }
-  
-  form select {
-    width: 100%;
-    padding: 15px;
-  }
+body {
+  min-height: 100vh;
+  padding-bottom: 70px;
+  position: relative;
+  background-color: #eaeaea;
+  font-family: proxima-nova, sans-serif;
+  color: var(--text-color);
+}
 
-  .login {
-    text-align: center;
-  }
+.primary-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sec-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  text-align: center;
+  font-family: proxima-nova, sans-serif;
+  background-color: var(--sec-color);
+  color: #fff;
+  text-decoration: none;
+}
+
+section#home-page header {
+  padding-top: 25vh;
+}
+
+section#home-page h1 {
+  text-align: center;
+}
+
+section#home-page nav {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.h-btn {
+  background-color: cornflowerblue;
+  padding: 11px;
+  width: 50%;
+  color: white;
+  font-weight: bolder;
+}
+
+section#home-page nav .bttn {
+  position: initial;
+}
+
+.blue-bttn {
+  background-color: var(--main-color) !important;
+}
+
+.grey-bttn {
+  background-color: inherit !important;
+  color: var(--text-color);
+}
+
+.grey-bttn a {
+  color: var(--text-color) !important;
+}
+
+header#header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--main-color);
+}
+
+header#header-main img {
+  width: 35px;
+}
+
+header#header-main h1 {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  color: #ffe;
+}
+
+header.title h1 {
+  margin: 0 auto !important;
+  transform: none !important;
+}
+
+.log-out {
+  background: none;
+  border: none;
+}
+
+.log-out img {
+  width: 25px !important;
+}
+
+a.card-link-wrapper {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+div.category {
+  margin: 11px;
+  padding: 11px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: #fff;
+}
+
+div.category:hover {
+  background-color: antiquewhite;
+}
+
+div.category .details {
+  width: 50%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+div.category .img-holder {
+  width: 25%;
+  margin-top: 0;
+}
+
+div.category .amount-col {
+  width: 25%;
+  text-align: end;
+}
+
+div.category .date {
+  font-size: 0.8rem;
+}
+
+div.amount-card {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 5px #a0a0a0;
+  background-color: #fff;
+}
+
+form {
+  margin: 10px 0;
+  text-align: center;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a0a0a0;
+  border-bottom: none;
+}
+
+form input[type="checkbox"] {
+  margin: 20px 0;
+  width: auto;
+}
+
+form select {
+  width: 100%;
+  padding: 15px;
+}
+
+.login {
+  text-align: center;
+}

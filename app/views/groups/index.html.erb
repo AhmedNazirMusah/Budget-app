@@ -1,0 +1,26 @@
+<header id="header-main">
+  <nav><a href="<%= groups_path %>"><%= image_tag("house-fill.svg") %></a></nav>
+  <h1>Categories</h1>
+  <%= button_to image_tag("box-arrow-left.svg"), destroy_user_session_path, method: :delete, class: "log-out" %>
+</header>
+
+<section>
+  <div class="category-container">
+    <% @groups.each do |group| %>
+    <a href="<%= group_entities_path(group) %>">
+      <div class="category">
+        <div class="img-holder details"><img src="<%= group.icon %>"></div>
+        <div class="details">
+          <span><%= group.name %></span>
+          <span class="date"><%= group.updated_at %></span>
+        </div>
+        <div class="details amount-col">
+          <span  class="sec-text">$<%= group.total_accumulated_amount %></span>
+        </div>
+      </div>
+    </a>
+    <% end %>
+  </div>
+
+  <%= button_to "ADD CATEGORY", new_group_path,  method: "get", class: "btn"%>
+</section>

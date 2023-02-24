@@ -1,0 +1,28 @@
+<header id="header-main">
+  <nav><a href="<%= groups_path %>"><%= image_tag("arrow-left.svg") %></a></nav>
+  <h1>Transactions</h1>
+  <%= button_to image_tag("box-arrow-left.svg"), destroy_user_session_path, method: :delete, class: "log-out" %>
+</header>
+
+<section>
+  <div class="amount-card">
+    <span class="primary-text">Total amount</span> 
+    <span class="sec-text"><%= @group.total_accumulated_amount %></span>
+  </div>
+
+  <div class="category-container">
+    <% @group_transactions.each do |t| %>
+      <div class="category">
+        <div  class="details">
+          <span class="primary-text"><%= t.name %></span>
+          <span class="date"><%= t.updated_at %></span>
+        </div>
+        <div class="details">
+          <span class="sec-text amount-col">$<%= t.amount %></span>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <%= button_to "ADD TRANSACTION", new_entity_path, method: "get" ,class: "btn" %>
+</section>

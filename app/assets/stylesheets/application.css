@@ -74,11 +74,24 @@ section#home-page nav {
 }
 
 .h-btn {
-  background-color: cornflowerblue;
-  padding: 11px;
-  width: 50%;
-  color: white;
+  padding: 15px;
+  width: 100%;
   font-weight: bolder;
+  background-color: inherit !important;
+  color: var(--text-color);
+  position: absolute;
+  bottom: 58px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid;
+}
+
+.next {
+  width: inherit;
+  background: none;
+  color: white;
+  border: none;
+  font-size: larger;
 }
 
 section#home-page nav .bttn {
@@ -87,11 +100,6 @@ section#home-page nav .bttn {
 
 .blue-bttn {
   background-color: var(--main-color) !important;
-}
-
-.grey-bttn {
-  background-color: inherit !important;
-  color: var(--text-color);
 }
 
 .grey-bttn a {
@@ -205,4 +213,14 @@ form select {
 
 .login {
   text-align: center;
+}
+
+.forgot {
+  text-align: center;
+  text-decoration: none;
+  color: #716666;
+}
+
+.category-container a {
+  text-decoration: none;
 }
